@@ -3,9 +3,19 @@
 *::before {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Roboto-Regular.woff") format("woff"),
+    url("fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
+  font-family: "Roboto", sans-serif;
   font-size: 62.5%;
   font-weight: normal;
   color: #fff;
@@ -75,6 +85,7 @@ h6 {
 }
 .header__nav a {
   font-size: 1.6rem;
+  line-height: 150%;
 }
 .header__nav a:not(:last-child) {
   margin-right: 7.1rem;
@@ -88,6 +99,7 @@ h6 {
   margin-left: 55.3rem;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   font-size: 1.6rem;
+  line-height: 150%;
 }
 .main-display {
   padding-top: 23rem;
@@ -95,6 +107,7 @@ h6 {
 .main-display .container {
   position: relative;
   z-index: 10;
+  padding-bottom: 22.8rem;
 }
 .main-display__background {
   position: absolute;
@@ -104,6 +117,9 @@ h6 {
 }
 .main-display__header {
   font-size: 6.4rem;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
   max-width: 76rem;
   margin-bottom: 5rem;
 }
@@ -114,10 +130,12 @@ h6 {
 .main-display__button {
   background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
   font-size: 1.6rem;
+  line-height: 150%;
 }
 .timer__item {
   width: 10.2rem;
   height: 11.2rem;
+
   background-color: #121212;
   display: flex;
   align-items: center;
@@ -130,8 +148,90 @@ h6 {
 
 .timer__count {
   font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 140%;
 }
 .timer__text {
   font-size: 1.6rem;
+  line-height: 140%;
   opacity: 0.4;
+}
+
+.work {
+  padding-top: 20rem;
+  padding-bottom: 24.3rem;
+}
+.work__wrap {
+  display: flex;
+}
+.work__img {
+  width: 52.5rem;
+  height: 49.9rem;
+  margin-right: 13.9rem;
+}
+.work__text {
+  max-width: 63.6rem;
+  padding-top: 6.9rem;
+}
+.work__header {
+  margin-bottom: 4.5rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+.work__description {
+  font-size: 1.6rem;
+}
+.process {
+  position: relative;
+  padding-bottom: 20rem;
+}
+.process__img {
+  width: 9rem;
+  height: 4.5rem;
+}
+.process__header {
+  margin-bottom: 4.9rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+.process__title {
+  display: flex;
+}
+.process__description {
+  max-width: 41.1rem;
+  margin-bottom: 8rem;
+  font-size: 16px;
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+.process__columns {
+  display: flex;
+}
+.process__columns::after {
+  content: "";
+  display: block;
+  width: 130rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 31rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+.process__item {
+  max-width: 30.6rem;
+}
+.process__work {
+  margin-bottom: 6.5rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 36px;
+}
+.process__text {
+  font-size: 1.4rem;
+  line-height: 160%;
+  opacity: 0.5;
 }
